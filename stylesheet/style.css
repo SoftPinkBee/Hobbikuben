@@ -1,1 +1,747 @@
+/* WHOLE SITE */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+* {
+    margin: 0px;
+    font-family: 'calibri', 'arial', sans-serif;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+.body {
+    padding-top: 70px;
+}
 
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background-color: none;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #eac7b2;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #c89d7d;
+}
+
+/* text */
+.heading-1 {
+    font-size: 24px;
+}
+.heading-2 {
+    font-size: 20px;
+}
+.heading-background {
+    background-image: url(img/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.heading-centered {
+    text-align: center;
+    padding: 20px 0px;
+    border-top: 1px solid #c89d7d;
+}
+.text-main {
+    font-size: 16px;
+}
+.text-opaque {
+    opacity: 80%;
+}
+.text-extra-opaque {
+    opacity: 60%;
+}
+.text-italic {
+    font-style: italic;
+}
+.text-bold {
+    font-weight: bold;
+}
+.text-white {
+    color: #fff;
+}
+.text-centered {
+    text-align: center;
+}
+.text-right {
+    float: right;
+}
+
+/* links */
+.link-white {
+    color: #fff;
+    text-decoration: underline;
+}
+.link-white:hover {
+    color: #b8dacc;
+    text-decoration: underline;
+}
+.link-black-1 {
+    color: #000;
+    text-decoration: underline;
+}
+.link-black-1:hover {
+    color: #c89d7d;
+    text-decoration: underline;
+}
+.link-black-2 {
+    color: #000;
+    text-decoration: none;
+}
+.link-black-2:hover {
+    color: #c89d7d;
+    text-decoration: none;
+}
+.link-heading-1 {
+    color: #000;
+    text-decoration: none;
+}
+.link-heading-1:hover {
+    color: #c89d7d;
+    text-decoration: none;
+}
+.link-heading-2 {
+    color: #000;
+    text-decoration: none;
+}
+.link-heading-2:hover {
+    color: #c89d7d;
+    text-decoration: none;
+}
+
+/* MOBILE */
+@media only screen and (min-width: 0px) {
+    /* layout */
+    .col-xs-0 {
+        display: none;
+    }
+    .col-xs-6 {
+        display: block;
+        width: 50%;
+    }
+    .col-xs-12 {
+        display: block;
+        width: 100%;
+    }
+    
+    /* header */
+    .header {
+        z-index: 2;
+        position: fixed;
+        height: 70px;
+        width: 100%;
+        background-color: #b8dacc;
+    }
+    .nav-small {
+        display: block;
+        text-align: center;
+    }
+    .nav-large {
+        display: none;
+    }
+    .nav-icon {
+        margin: 0px 10px;
+        height: 30px;
+        width: 30px;
+    }
+    .nav-icon:hover {
+        opacity: 50%;
+    }
+    .logo-small {
+        margin-top: 10px;
+        height: 40px;
+    }
+    
+    /* "hjem" page */
+    .hjem-infografikk-mobile {
+        display: block;
+        width: 100%;
+    }
+    .hjem-infografikk-tablet {
+        display: none;
+    }
+    .hjem-infografikk-desktop {
+        display: none;
+    }
+    .hjem-divider {
+        border-right: none;
+    }
+    .hjem-oppskrifter {
+        padding-bottom: 10px;
+    }
+    .hjem-oppskrifter-navn {
+        text-align: center;
+        text-decoration: none;
+    }
+    .hjem-blogg {
+        padding-bottom: 10px;
+    }
+    
+    /* "om oss" page */
+    .om-oss-intro {
+        padding: 40px 25px;
+    }
+    .om-oss-container {
+        background-color: #94ad9a;
+        border: 5px solid #fff;
+    }
+    .om-oss-portrait {
+        display: inline;
+        float: left;
+        margin-right: 10px;
+        height: 200px;
+        width: 150px;
+    }
+    .om-oss-text {
+        display: inline;
+    }
+    
+    /* "oppskrifter" page */
+    .oppskrifter-side-heading {
+        text-align: center;
+    }
+    .oppskrifter-side-kategories {
+        text-align: center;
+        padding: 10px;
+    }
+    .oppskrifter-side-kategori {
+        display: inline;
+        padding: 0px 5px;
+        font-size: 16px;
+    }
+    .oppskrifter-container {
+        margin-bottom: 10px;
+        background-color: #ffefe8;
+        border: 5px solid #fff; 
+    }
+    .oppskrifter-front {
+        width: 100%;
+    }
+    
+    /* "blogg" page */
+    .blogg-side {
+        display: none;
+    }
+    .blogg-intro {
+        padding: 40px 25px;
+    }
+    .blogg-container {
+        margin-bottom: 10px;
+        background-color: #ffefe8;
+    }
+    .blogg-textbox {
+        padding: 20px;
+    }
+    
+    /* footer */
+    .footer {
+        z-index: 2;
+        position: absolute;
+        height: 98px;
+        width: 100%;
+        background-color: #2f4538;
+        font-size: 10px;
+    }
+    .footer-1 {
+        text-align: right;
+        padding-top: 18px;
+        border-right: 1px solid #5f7165;
+    }
+    .footer-2 {
+        text-align: left;
+        padding-top: 18px;
+    }
+    
+    /* misc */
+    .elevator-desktop {
+        display: none;
+    }
+    .elevator-mobile {
+        z-index: 1;
+        display: block;
+        position: fixed;
+        text-align: center;
+        padding: 5px;
+        bottom: 0px;
+        width: 100%;
+        background-color: #eac7b2;
+        font-size: 16px;
+        color: #000;
+        text-decoration: none;
+    }
+    .elevator-mobile:hover {
+        background-color: #c89d7d;
+    }
+    .side-heading {
+        text-align: center;
+    }
+    
+}
+
+/* TABLET */
+@media only screen and (min-width: 700px) {
+    /* layout */
+    .col-s-0 {
+        display: none;
+    }
+    .col-s-1 {
+        display: block;
+        width: 8.33%;
+    }
+    .col-s-2 {
+        display: block;
+        width: 16.66%;
+    }
+    .col-s-3 {
+        
+        display: block;
+        width: 25%;
+    }
+    .col-s-4 {
+        display: block;
+        width: 33.33%;
+    }
+    .col-s-5 {
+        display: block;
+        width: 41.66%;
+    }
+    .col-s-6 {
+        display: block;
+        width: 50%;
+    }
+    .col-s-7 {
+        display: block;
+        width: 58.33%;
+    }
+    .col-s-8 {
+        display: block;
+        width: 66.66%;
+    }
+    .col-s-9 {
+        display: block;
+        width: 75%;
+    }
+    .col-s-10 {
+        display: block;
+        width: 83.33%;
+    }
+    .col-s-11 {
+        display: block;
+        width: 91.66%;
+    }
+    .col-s-12 {
+        display: block;
+        width: 100%;
+    }
+    
+    /* header */
+    .header {
+        z-index: 2;
+        position: fixed;
+        text-align: center;
+        height: 70px;
+        width: 100%;
+        background-color: #b8dacc;
+    }
+    .nav-small {
+        display: none;
+    }
+    .nav-large {
+        display: inline-block;
+    }
+    .nav {
+        float: left;
+        margin: 20px;
+        padding: 0 10px;
+        font-size: 24px;
+        color: #000;
+        text-decoration: none;
+    }
+    .nav:hover {
+        color: #5f7165;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .nav-active {
+        color: #000;
+        font-weight: bold;
+    }
+    .logo-large {
+        float: left;
+        margin: 10px 15px 0px 15px;
+        height: 50px;
+    }
+    
+    /* "hjem" page */
+    .hjem-infografikk-mobile {
+        display: none;
+    }
+    .hjem-infografikk-tablet {
+        display: block;
+        width: 100%;
+    }
+    .hjem-infografikk-desktop {
+        display: none;
+    }
+    .hjem-divider {
+        border-right: 1px solid #c89d7d;
+    }
+    .hjem-oppskrifter {
+        padding-bottom: 10px;
+    }
+    .hjem-blogg {
+        padding-bottom: 10px;
+    }
+    
+    /* "om oss" page */
+    .om-oss-intro {
+        padding: 60px 37.5px;
+    }
+    .om-oss-container {
+        background-color: #94ad9a;
+        border: 5px solid #fff;
+    }
+    .om-oss-portrait {
+        display: inline;
+        float: left;
+        margin-right: 10px;
+        height: 200px;
+        width: 150px;
+    }
+    .om-oss-text {
+        display: inline;
+    }
+    
+    /* "oppskrifter" page */
+    .oppskrifter-side-kategories {
+        text-align: left;
+        padding: 0px;
+    }
+    .oppskrifter-main {
+        border-top: none;
+        border-left: 1px solid #c89d7d;
+    }
+    .oppskrifter-container {
+        margin-bottom: 10px;
+        background-color: #ffefe8;
+        border: 5px solid #fff;
+    }
+    .oppskrifter-front {
+        width: 100%;
+    }
+    
+    /* "blogg" page */
+    .blogg-main {
+        border-left: 1px solid #c89d7d;
+    }
+    .blogg-intro {
+        padding: 60px 37.5px;
+    }
+    .blogg-container {
+        margin-bottom: 10px;
+        background-color: #ffefe8;
+    }
+    .blogg-textbox {
+        padding: 20px;
+    }
+    .blogg-img {
+        float: left;
+        margin-right: 10px;
+        height: 150px;
+    }
+    
+    /* footer */
+    .footer {
+        z-index: 2;
+        position: absolute;
+        height: 120px;
+        width: 100%;
+        background-color: #2f4538;
+        font-size: 14px;
+    }
+    .footer-1 {
+        text-align: right;
+        padding-top: 18px;
+        border-right: 1px solid #5f7165;
+    }
+    .footer-2 {
+        text-align: left;
+        padding-top: 18px;
+    }
+    
+    /* misc */
+    .elevator-mobile {
+        display: none;
+    }
+    .elevator-desktop {
+        z-index: 1;
+        display: block;
+        position: fixed;
+        margin-left: 15px;
+        bottom: 15px;
+        background-color: #fff;
+        font-size: 16px;
+        color: #000;
+        text-decoration: underline;
+    }.hjem-infografikk-mobile {
+        display: none;
+    }
+    .hjem-infografikk-tablet {
+        display: block;
+        width: 100vw;
+    }
+    .hjem-infografikk-desktop {
+        display: none;
+    }
+    .hjem-divider {
+        border-right: 1px solid #c89d7d;
+    }
+    .hjem-oppskrifter {
+        padding-bottom: 10px;
+    }
+    .hjem-blogg {
+        padding-bottom: 10px;
+    }
+    .elevator-desktop:hover {
+        color: #c89d7d;
+        text-decoration: underline;
+    }
+    .side-heading {
+        text-align: left;
+    }
+    .side-text {
+        display: block;
+        padding: 20px 0px 0px 0px;
+    }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1025px) {
+    /* layout */
+    .col-0 {
+        display: none;
+    }
+    .col-1 {
+        display: block;
+        width: 8.33%;
+    }
+    .col-2 {
+        display: block;
+        width: 16.66%;
+    }
+    .col-3 {
+        display: block;
+        width: 25%;
+    }
+    .col-4 {
+        display: block;
+        width: 33.33%;
+    }
+    .col-5 {
+        display: block;
+        width: 41.66%;
+    }
+    .col-6 {
+        display: block;
+        width: 50%;
+    }
+    .col-7 {
+        display: block;
+        width: 58.33%;
+    }
+    .col-8 {
+        display: block;
+        width: 66.66%;
+    }
+    .col-9 {
+        display: block;
+        width: 75%;
+    }
+    .col-10 {
+        display: block;
+        width: 83.33%;
+    }
+    .col-11 {
+        display: block;
+        width: 91.66%;
+    }
+    .col-12 {
+        display: block;
+        width: 100%;
+    }
+    
+    /* header */
+    .header {
+        z-index: 2;
+        position: fixed;
+        text-align: center;
+        height: 70px;
+        width: 100%;
+        background-color: #b8dacc;
+    }
+    .nav-small {
+        display: none;
+    }
+    .nav-large {
+        display: inline-block;
+    }
+    .nav {
+        float: left;
+        margin: 20px;
+        padding: 0 30px;
+        font-size: 24px;
+        color: #000;
+        text-decoration: none;
+    }
+    .nav:hover {
+        color: #5f7165;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .nav-active {
+        color: #000;
+        font-weight: bold;
+    }
+    .logo-large {
+        float: left;
+        margin: 10px 15px 0px 15px;
+        height: 50px;
+    }
+    
+    /* "hjem" page */
+    .hjem-infografikk-mobile {
+        display: none;
+    }
+    .hjem-infografikk-tablet {
+        display: none;
+    }
+    .hjem-infografikk-desktop {
+        display: block;
+        width: 100%;
+    }
+    .hjem-divider {
+        border-right: 1px solid #c89d7d;
+    }
+    .hjem-oppskrifter {
+        padding-bottom: 10px;
+    }
+    .hjem-blogg {
+        padding-bottom: 10px;
+    }
+    
+    /* "om oss" page */
+    .om-oss-intro {
+        padding: 80px 50px;
+    }
+    .om-oss-container {
+        background: #94ad9a;
+        border: 5px solid #fff;
+    }
+    .om-oss-portrait {
+        display: inline;
+        float: left;
+        margin-right: 10px;
+        height: 200px;
+        width: 150px;
+    }
+    .om-oss-text {
+        display: inline;
+    }
+    
+    /* "oppskrifter" page */
+    .oppskrifter-side-kategories {
+        text-align: left;
+        padding: 0px;
+    }
+    .oppskrifter-main {
+        border-top: none;
+        border-left: 1px solid #c89d7d;
+    }
+    .oppskrifter-container {
+        margin-bottom: 10px;
+        height: 1000px;
+        background-color: #ffefe8;
+        border: 5px solid #fff;
+    }
+    .oppskrifter-front {
+        width: 100%;
+    }
+    .oppskrifter-textbox {
+        overflow-y: scroll;
+        padding-right: 6px;
+        height: 490px;
+    }
+    
+    /* "blogg" page*/
+    .blogg-main {
+        border-left: 1px solid #c89d7d;
+    }
+    .blogg-intro {
+        padding: 80px 50px;
+    }
+    .blogg-container {
+        margin-bottom: 10px;
+        background-color: #ffefe8;
+    }
+    .blogg-textbox {
+        padding: 20px;
+    }
+    .blogg-img {
+        float: left;
+        margin-right: 10px;
+        height: 150px;
+    }
+    
+    /* footer */
+    .footer {
+        z-index: 2;
+        position: absolute;
+        height: 120px;
+        width: 100%;
+        background-color: #2f4538;
+        font-size: 14px;
+    }
+    .footer-1 {
+        text-align: right;
+        padding-top: 18px;
+        border-right: 1px solid #5f7165;
+    }
+    .footer-2 {
+        text-align: left;
+        padding-top: 18px;
+    }
+    
+    /* misc */
+    .elevator-mobile {
+        display: none;
+    }
+    .elevator-desktop {
+        z-index: 1;
+        display: block;
+        position: fixed;
+        margin-left: 15px;
+        bottom: 15px;
+        background-color: #fff;
+        font-size: 16px;
+        color: #000;
+        text-decoration: underline;
+    }
+    .elevator-desktop:hover {
+        color: #c89d7d;
+        text-decoration: underline;
+    }
+    .side-heading {
+        text-align: left;
+    }
+    .side-text {
+        display: block;
+        padding: 20px 0px 0px 0px;
+    }
+}
