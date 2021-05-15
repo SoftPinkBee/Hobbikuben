@@ -173,15 +173,9 @@
     .hjem-divider {
         border-right: none;
     }
-    .hjem-oppskrifter {
-        padding-bottom: 10px;
-    }
     .hjem-oppskrifter-navn {
         text-align: center;
         text-decoration: none;
-    }
-    .hjem-blogg {
-        padding-bottom: 10px;
     }
     
     /* "om oss" page */
@@ -393,12 +387,6 @@
     .hjem-divider {
         border-right: 1px solid #c89d7d;
     }
-    .hjem-oppskrifter {
-        padding-bottom: 10px;
-    }
-    .hjem-blogg {
-        padding-bottom: 10px;
-    }
     
     /* "om oss" page */
     .om-oss-intro {
@@ -490,24 +478,6 @@
         font-size: 16px;
         color: #000;
         text-decoration: underline;
-    }.hjem-infografikk-mobile {
-        display: none;
-    }
-    .hjem-infografikk-tablet {
-        display: block;
-        width: 100vw;
-    }
-    .hjem-infografikk-desktop {
-        display: none;
-    }
-    .hjem-divider {
-        border-right: 1px solid #c89d7d;
-    }
-    .hjem-oppskrifter {
-        padding-bottom: 10px;
-    }
-    .hjem-blogg {
-        padding-bottom: 10px;
     }
     .elevator-desktop:hover {
         color: #c89d7d;
@@ -628,12 +598,6 @@
     }
     .hjem-divider {
         border-right: 1px solid #c89d7d;
-    }
-    .hjem-oppskrifter {
-        padding-bottom: 10px;
-    }
-    .hjem-blogg {
-        padding-bottom: 10px;
     }
     
     /* "om oss" page */
